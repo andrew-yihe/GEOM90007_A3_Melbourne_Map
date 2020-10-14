@@ -15,3 +15,16 @@ var map = new mapboxgl.Map({
       //maxBounds: bounds // Sets bounds as max
 });
 
+
+//Dropdown OnClick Event Function
+function dropdownexpand() {
+      document.getElementById('dashboard').style.display = 'block';
+      document.getElementById('dashboardTitle').style.display = 'none';
+      
+}
+
+function dropdownshrink() {
+      document.getElementById('dashboard').style.display = 'none';
+      document.getElementById('dashboardTitle').style.display = 'block';
+      
+}
