@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <meta charset="utf-8" />
+      <title>24h in the City of Melbourne</title>
+      <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+      <!-- Font Awesome Icons -->
+      <script src="https://kit.fontawesome.com/122ab2881a.js" crossorigin="anonymous"></script>
+
+      <!-- Main CSS File -->
+      <link rel="stylesheet" href="assets/css/style.css">
+
+      <!-- Mapbox JS -->
+      <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+      <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css" />
+
+</head>
+
+<body>
+
+      <div id="map"></div>
+
+      <div id="dashboardTitle">
+            <div id="title">A Day in the City of Melbourne</div>
+      </div>
+
+      <div id="TitleArrowDownBox" onClick="dropdownexpand()">
+            <i id="TitleArrowDown" class="fas fa-angle-down"></i>
+      </div>
+
+
+
+      <div id="dashboard">
+            <div id="TimeRange" class="timebox">
+
+                  <div id="all" class="time-title">All Day</div>
+                  <i id="allleft" class="fas fa-angle-left" onClick="ShowNight()"></i>
+                  <i id="allright" class="fas fa-angle-right" onClick="ShowMorning()"></i>
+
+                  <div id="morning" class="time-title">Morning</div>
+                  <i id="mleft" class="fas fa-angle-left" onClick="ShowAllday()"></i>
+                  <i id="mright" class="fas fa-angle-right" onClick="ShowAfternoon()"></i>
+
+                  <div id="afternoon" class="time-title">Afternoon</div>
+                  <i id="aleft" class="fas fa-angle-left" onClick="ShowMorning()"></i>
+                  <i id="aright" class="fas fa-angle-right" onClick="ShowEvening()"></i>
+
+                  <div id="evening" class="time-title">Evening</div>
+                  <i id="eleft" class="fas fa-angle-left" onClick="ShowAfternoon()"></i>
+                  <i id="eright" class="fas fa-angle-right" onClick="ShowNight()"></i>
+
+                  <div id="night" class="time-title">Night</div>
+                  <i id="nleft" class="fas fa-angle-left" onClick="ShowEvening()"></i>
+                  <i id="nright" class="fas fa-angle-right" onClick="ShowAllday()"></i>
+
+            </div>
+
+            <div id="filters">
+                  <a id="food" class="grid-item" onClick="ShowFood()">Food</a>
+                  <a id="sight" class="grid-item" onClick="ShowSight()">Sight</a>
+                  <a id="shopping" class="grid-item" onClick="ShowShopping()">Shopping</a>
+                  <a id="exercise" class="grid-item" onClick="ShowExercise()">Exercise</a>
+                  <a id="activity" class="grid-item" onClick="ShowActivity()">Activity</a>
+                  <a id="nightlife" class="grid-item" onClick="ShowNightlife()">Nightlife</a>
+            </div>
+            <div id="lists"></div>
+
+            <div id="direction" onClick="ShowDirection()">
+                  <i id="direction-icon" class="fas fa-location-arrow"></i>
+            </div>
+
+      </div>
+
+      <!-- External JS Files -->
+
+      <!-- Main JS Files -->
+      <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+      <script src="assets/js/main.js"></script>
+      <script src="assets/js/jquery-3.5.1.min.js"></script>
+
+
+</body>
+
+</html>
