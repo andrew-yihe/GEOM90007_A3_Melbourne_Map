@@ -29,12 +29,14 @@ function ShowFood() {
   let opacity = map.getPaintProperty('top-rated-eateries-web-17fyk9', 'icon-opacity');
   if (opacity == 1) { 
     map.setPaintProperty('top-rated-eateries-web-17fyk9', 'icon-opacity', 0);
+    setTimeout(() => {map.setLayoutProperty('top-rated-eateries-web-17fyk9', 'visibility', 'none');}, 500);
     this.class = '';
     $('#food').addClass('deselect');
   } else { 
     this.class = 'grid-item';
     map.setPaintProperty('top-rated-eateries-web-17fyk9', 'icon-opacity', 1);
     $('#food').removeClass('deselect');
+    map.setLayoutProperty('top-rated-eateries-web-17fyk9', 'visibility', 'visible');
   }
 
 }
@@ -45,12 +47,14 @@ function ShowSight() {
       let opacity = map.getPaintProperty('sights-web-5ip46g', 'icon-opacity');
       if (opacity == 1) {
             map.setPaintProperty('sights-web-5ip46g', 'icon-opacity', 0);
+            setTimeout(() => {map.setLayoutProperty('sights-web-5ip46g', 'visibility', 'none');}, 500);
             this.class = '';
             $('#sight').addClass('deselect');
       } else {
             this.class = 'grid-item';
             map.setPaintProperty('sights-web-5ip46g', 'icon-opacity', 1);
             $('#sight').removeClass('deselect');
+            map.setLayoutProperty('sights-web-5ip46g', 'visibility', 'visible');
       }
 
 }
@@ -61,12 +65,14 @@ function ShowShopping() {
       let opacity = map.getPaintProperty('shopping-web-8fj1lg', 'icon-opacity');
       if (opacity == 1) {
             map.setPaintProperty('shopping-web-8fj1lg', 'icon-opacity', 0);
+            setTimeout(() => {map.setLayoutProperty('shopping-web-8fj1lg', 'visibility', 'none');}, 500);
             this.class = '';
             $('#shopping').addClass('deselect');
       } else {
             this.class = 'grid-item';
             map.setPaintProperty('shopping-web-8fj1lg', 'icon-opacity', 1);
             $('#shopping').removeClass('deselect');
+            map.setLayoutProperty('shopping-web-8fj1lg', 'visibility', 'visible');
       }
 
 }
@@ -77,12 +83,14 @@ function ShowExercise() {
       let opacity = map.getPaintProperty('exercise-web-10za7m', 'icon-opacity');
       if (opacity == 1) {
             map.setPaintProperty('exercise-web-10za7m', 'icon-opacity', 0);
+            setTimeout(() => {map.setLayoutProperty('exercise-web-10za7m', 'visibility', 'none');}, 500);
             this.class = '';
             $('#exercise').addClass('deselect');
       } else {
             this.class = 'grid-item';
             map.setPaintProperty('exercise-web-10za7m', 'icon-opacity', 1);
             $('#exercise').removeClass('deselect');
+            map.setLayoutProperty('exercise-web-10za7m', 'visibility', 'visible');
       }
 
 }
@@ -93,12 +101,14 @@ function ShowNightlife() {
       let opacity = map.getPaintProperty('nightlife-web-0n7sjl', 'icon-opacity');
       if (opacity == 1) {
             map.setPaintProperty('nightlife-web-0n7sjl', 'icon-opacity', 0);
+            setTimeout(() => {map.setLayoutProperty('nightlife-web-0n7sjl', 'visibility', 'none');}, 500);
             this.class = '';
             $('#nightlife').addClass('deselect');
       } else {
             this.class = 'grid-item';
             map.setPaintProperty('nightlife-web-0n7sjl', 'icon-opacity', 1);
             $('#nightlife').removeClass('deselect');
+            map.setLayoutProperty('nightlife-web-0n7sjl', 'visibility', 'visible');
       }
 
 }
@@ -109,12 +119,14 @@ function ShowActivity() {
       let opacity = map.getPaintProperty('activity-web-3bhv6c', 'icon-opacity');
       if (opacity == 1) {
             map.setPaintProperty('activity-web-3bhv6c', 'icon-opacity', 0);
+            setTimeout(() => {map.setLayoutProperty('activity-web-3bhv6c', 'visibility', 'none');}, 500);
             this.class = '';
             $('#activity').addClass('deselect');
       } else {
             this.class = 'grid-item';
             map.setPaintProperty('activity-web-3bhv6c', 'icon-opacity', 1);
             $('#activity').removeClass('deselect');
+            map.setLayoutProperty('activity-web-3bhv6c', 'visibility', 'visible');
       }
 
 }

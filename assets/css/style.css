@@ -488,6 +488,24 @@ body {
       font-weight: 700;
       margin-top: -30px;
       text-align: center;
+      text-decoration: none;
+      transition: 0.2s ease-in-out;
+}
+
+.popupname:hover {
+      background: #8b8b92;
+      color: #fff;
+      margin: 0;
+      display: block;
+      padding: 10px;
+      font-size: 15px;
+      border-radius: 20px;
+      font-weight: 700;
+      margin-top: -30px;
+      text-align: center;
+      text-decoration: none;
+      transition: 0.2s ease-in-out;
+      filter: invert(100%);
 }
 
 .popupdesc {
