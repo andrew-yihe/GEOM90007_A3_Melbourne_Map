@@ -340,7 +340,7 @@ map.on('load', function () {
       map.on('click', 'shopping-web-8fj1lg', function (e) {
             new mapboxgl.Popup()
                   .setLngLat(e.lngLat)
-                  .setHTML('<h4 class=popupname>' + e.features[0].properties.feature_name + '</h4>  <p class=popupdesc>' + e.features[0].properties.Description + '</p>')
+                  .setHTML('<a href ="' + e.features[0].properties.URL + '"class=popupname>' + e.features[0].properties.feature_name + '</a>  <p class=popupdesc>' + e.features[0].properties.Description + '</p>')
                   .addTo(map);
       });
 
@@ -348,7 +348,7 @@ map.on('load', function () {
       map.on('click', 'top-rated-eateries-web-17fyk9', function (e) {
             new mapboxgl.Popup()
                   .setLngLat(e.lngLat)
-                  .setHTML('<h4 class=popupname>' + e.features[0].properties.feature_name + '</h4>  <p class=popupdesc>' + e.features[0].properties.Description + '</p>')
+                  .setHTML('<a href ="' + e.features[0].properties.URL + '"class=popupname>' + e.features[0].properties.feature_name + '</a>  <p class=popupdesc>' + e.features[0].properties.Description + '</p>')
                   .addTo(map);
       });
 
@@ -356,7 +356,7 @@ map.on('load', function () {
       map.on('click', 'sights-web-5ip46g', function (e) {
             new mapboxgl.Popup()
                   .setLngLat(e.lngLat)
-                  .setHTML('<h4 class=popupname>' + e.features[0].properties.feature_name + '</h4>  <p class=popupdesc>' + e.features[0].properties.Description + '</p>')
+                  .setHTML('<a href ="' + e.features[0].properties.URL + '"class=popupname>' + e.features[0].properties.feature_name + '</a>  <p class=popupdesc>' + e.features[0].properties.Description + '</p>')
                   .addTo(map);
       });
 
@@ -364,7 +364,7 @@ map.on('load', function () {
       map.on('click', 'exercise-web-10za7m', function (e) {
             new mapboxgl.Popup()
                   .setLngLat(e.lngLat)
-                  .setHTML('<h4 class=popupname>' + e.features[0].properties.feature_name + '</h4>  <p class=popupdesc>' + e.features[0].properties.Description + '</p>')
+                  .setHTML('<a href ="' + e.features[0].properties.URL + '"class=popupname>' + e.features[0].properties.feature_name + '</a>  <p class=popupdesc>' + e.features[0].properties.Description + '</p>')
                   .addTo(map);
       });
 
@@ -372,7 +372,7 @@ map.on('load', function () {
       map.on('click', 'nightlife-web-0n7sjl', function (e) {
             new mapboxgl.Popup()
                   .setLngLat(e.lngLat)
-                  .setHTML('<h4 class=popupname>' + e.features[0].properties.feature_name + '</h4>  <p class=popupdesc>' + e.features[0].properties.Description + '</p>')
+                  .setHTML('<a href ="' + e.features[0].properties.URL + '"class=popupname>' + e.features[0].properties.feature_name + '</a>  <p class=popupdesc>' + e.features[0].properties.Description + '</p>')
                   .addTo(map);
       });
 
@@ -380,7 +380,7 @@ map.on('load', function () {
       map.on('click', 'activity-web-3bhv6c', function (e) {
             new mapboxgl.Popup()
                   .setLngLat(e.lngLat)
-                  .setHTML('<h4 class=popupname>' + e.features[0].properties.feature_name + '</h4>  <p class=popupdesc>' + e.features[0].properties.Description + '</p>')
+                  .setHTML('<a href ="' + e.features[0].properties.URL + '"class=popupname>' + e.features[0].properties.feature_name + '</a>  <p class=popupdesc>' + e.features[0].properties.Description + '</p>')
                   .addTo(map);
       });
 
