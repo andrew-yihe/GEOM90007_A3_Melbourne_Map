@@ -1,8 +1,8 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiYW5kcmV3eWloZSIsImEiOiJja2V1cXVxd3UzMHQ0Mnhtc2Y0NTFjZHZuIn0.Blwfr3lh0aqpTnrLi64cKQ';
 
 var bounds = [
-  [144.913192, -37.901159],
-  [145.024027, -37.787036]
+  [144.866580, -37.846860],
+  [145.045680, -37.779580]
 ];
 
 var map = new mapboxgl.Map({
@@ -10,6 +10,7 @@ var map = new mapboxgl.Map({
   style: 'mapbox://styles/andrewyihe/ckg610eq032g019o0175qy7u3/draft',
   center: [144.959992, -37.818165],
   zoom: 14,
+  maxBounds: bounds
 });
 
 
